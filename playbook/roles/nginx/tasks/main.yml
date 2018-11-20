@@ -1,0 +1,11 @@
+---
+# This role will install nginx
+
+-  name: Install Nginx package
+   yum: name=nginx state=installed
+
+-  name: Copy Nginx configuration
+   template: src=../template/nginx.conf dest=/etc/nginx/
+
+-  name: Start Nginx Service
+   service: name=nginx state=started enabled=yes

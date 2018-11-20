@@ -1,0 +1,10 @@
+---
+-   name: Install php my admin, MySQL, Nginx, and PHP-FPM
+    hosts: all
+    become: yes
+    remote_user: ec2-user
+
+    roles:
+      - php-fpm
+      - nginx
+      - pma

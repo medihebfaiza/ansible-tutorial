@@ -1,0 +1,15 @@
+  - name: Download PMA
+    unarchive:
+      src: https://files.phpmyadmin.net/phpMyAdmin/4.8.3/phpMyAdmin-4.8.3-all-languages.tar.gz
+      dest: /var/www/html/
+      remote_src: yes
+
+  #- name: Rename PMA path
+  #  command: mv /var/www/html/phpMyAdmin-4.8.3-all-languages /var/www/html/phpmyadmin
+    
+  - name: Config PMA
+    template: src=../template/config.inc.php dest=/var/www/html/phpmyadmin/
+
+    
+
+
