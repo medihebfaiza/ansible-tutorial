@@ -4,8 +4,8 @@
       dest: /var/www/html/
       remote_src: yes
 
-  #- name: Rename PMA path
-  #  command: mv /var/www/html/phpMyAdmin-4.8.3-all-languages /var/www/html/phpmyadmin
+  - name: Rename PMA path
+    command: mv /var/www/html/phpMyAdmin-4.8.3-all-languages /var/www/html/phpmyadmin
     
   - name: Config PMA
     template: src=../template/config.inc.php dest=/var/www/html/phpmyadmin/
