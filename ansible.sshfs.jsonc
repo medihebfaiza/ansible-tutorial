@@ -1,0 +1,10 @@
+// If you haven't already, associate .jsonc files with "JSON with Comments (jsonc)"
+{
+    "label": "Asible EC2 Instance",
+    "root": "/tmp",
+    "host": "ec2-34-247-55-82.eu-west-1.compute.amazonaws.com",
+    "port": 22,
+    "username": "ec2-user",
+    "password": false,
+    "privateKeyPath": "/Users/mohamed-iheb.faiza/Desktop/ansible-tutorial.pem.txt"
+}
